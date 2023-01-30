@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+* {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+}
+input {
+  color: hsl(36, 100%, 99%);
+  border-style: none;
+  background-color: hsl(5, 85%, 63%);
+  margin-top: 20px;
+  padding: 10px;
+  width: 160px;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 3px;
+}
+hr {
+  color: hsl(233, 8%, 79%);
+  margin: 30px 0;
+}
+p {
+  font-size: 12px;
+  color: hsl(236, 13%, 42%);
+}
+li {
+  display: inline;
+  margin-right: 25px;
+  color: hsl(233, 8%, 79%);
+}
+ul {
+  float: right;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 80px;
+}
+.attribution a {
+  font-size: 11px;
+  color: hsl(228, 45%, 44%);
+}
+.content {
+  width: 65%;
+  margin: 0 auto;
+}
+.grid-container {
+  display: grid;
+  gap: 20px;
+  grid-template-areas:
+    "image image to-right"
+    "heading sub-heading to-right"
+    "flash-1 flash-2 flash-3";
+}
+.header {
+  margin: 20px auto;
+}
+.item-1 {
+  grid-area: image;
+}
+.item-2 {
+  grid-area: to-right;
+  background-color: hsl(240, 100%, 5%);
+  color: hsl(36, 100%, 99%);
+  padding: 15px;
+}
+.item-2 > h1 {
+  color: hsl(35, 77%, 62%);
+  margin: 0;
+  font-weight: 700;
+  font-size: 36px;
+}
+.item-2 > p {
+  color: hsl(233, 8%, 79%);
+}
+.item-3 {
+  grid-area: heading;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 3rem;
+}
+.item-4 {
+  grid-area: sub-heading;
+}
+.item-5 {
+  grid-area: flash-1;
+}
+.item-6 {
+  grid-area: flash-2;
+}
+.item-7 {
+  grid-area: flash-3;
+}
+.item-1 > img {
+  width: 100%;
+}
+.flash-img {
+  height: 110px;
+}
+.text {
+  display: inline;
+  float: right;
+  width: 65%;
+}
+.text > h1 {
+  font-size: 28px;
+  color: hsl(233, 8%, 79%);
+  margin: 0;
+}
+li:hover,
+h3:hover {
+  color: hsl(35, 77%, 62%);
+}
+input:hover {
+  background-color: hsl(240, 100%, 5%);
+}
+.mobile,
+.mobile-img {
+  display: none;
+}
+@media screen and (max-width: 500px) {
+  .grid-container {
+    display: block;
+  }
+  input {
+    margin-bottom: 30px;
+  }
+  .content {
+    width: 90%;
+  }
+  .mobile {
+    display: inline;
+    float: right;
+  }
+  .flash-news {
+    margin: 25px 0;
+  }
+  .desktop-img {
+    display: none;
+  }
+  .mobile-img {
+    display: block;
+  }
+}
